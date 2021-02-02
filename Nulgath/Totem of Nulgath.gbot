@@ -4,6 +4,10 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
+        "Name": "SKILL SET NAME"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
         "Name": "Label name"
       },
@@ -103,7 +107,35 @@
   },
   "Skills": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Skill, Grimoire]], mscorlib",
-    "$values": []
+    "$values": [
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[SKILL SET NAME]",
+        "Type": 2
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "1: Atramentous Shade",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Wicked Purgatory",
+        "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "4: Anathema",
+        "Index": "4"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[S] 3: Depraved Empowerment",
+        "Type": 1,
+        "Index": "3",
+        "SafeHealth": 60
+      }
+    ]
   },
   "Quests": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
@@ -126,7 +158,7 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Galanoth",
-    "iPort": 59887
+    "iPort": 65242
   },
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,

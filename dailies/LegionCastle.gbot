@@ -5,43 +5,61 @@
     "$values": [
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "arcangrove-1998",
-        "Cell": "Right",
-        "Pad": "Right"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestAvailable, Grimoire",
-        "Tag": "Quest",
-        "Text": "Quest is available",
-        "Value1": "802",
-        "Value2": ""
+        "Map": "akiba-1998",
+        "Cell": "r3",
+        "Pad": "Spawn"
       },
       {
         "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 802
+          "QuestID": 486
         }
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-        "Monster": "*",
-        "ItemName": "Slain Gorillaphant",
-        "ItemType": 1,
-        "Quantity": "50"
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+        "Map": "bludrut2-1998",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
+        "Monster": "*"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestCompleted, Grimoire",
         "Tag": "Quest",
         "Text": "Quest can be turned in",
-        "Value1": "802",
+        "Value1": "486",
         "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "2"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "2"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+        "Map": "akiba",
+        "Cell": "r3",
+        "Pad": "Spawn"
       },
       {
         "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 802
+          "QuestID": 486
         }
       },
       {
@@ -51,7 +69,37 @@
   },
   "Skills": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Skill, Grimoire]], mscorlib",
-    "$values": []
+    "$values": [
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[S] 2: Highlord's Gaze",
+        "Type": 1,
+        "Index": "2",
+        "SafeHealth": 60
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "4: Armageddon",
+        "Index": "4"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "3: Unshackle",
+        "Index": "3"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Highlord's Gaze",
+        "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[S] 2: Highlord's Gaze",
+        "Type": 1,
+        "Index": "2",
+        "SafeHealth": 60
+      }
+    ]
   },
   "Quests": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
@@ -66,18 +114,23 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Elder's Blood"
+      "Shadow Skull",
+      "Shadow Shroud"
     ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "sName": "Twilly",
-    "iPort": 65242
+    "sName": "Galanoth",
+    "iPort": 1373
   },
+  "SkillDelay": 100,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
+  "EnableRejection": true,
+  "AutoRelogin": true,
   "RelogDelay": 5000,
+  "RelogRetryUponFailure": true,
   "BotDelay": 1000,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
