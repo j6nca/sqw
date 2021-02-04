@@ -4,49 +4,22 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
-        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-        "TransferFromBank": true,
-        "ItemName": "Glacera Ice Token"
-      },
-      {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "frozentower-1998",
+        "Map": "lair-1998",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r16",
-        "Pad": "Left"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
-        "Quest": {
-          "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 3965
-        }
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Dragon Scale",
+        "Quantity": "30"
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
         "Monster": "*",
-        "ItemName": "Dark Ice",
-        "ItemType": 1,
-        "Quantity": "1"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 2000
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
-        "Quest": {
-          "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 3965
-        }
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-        "ItemName": "Glacera Ice Token"
+        "ItemName": "Ice Vapor",
+        "Quantity": "30"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
@@ -70,24 +43,64 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Svelgr Fang",
-      "Glacera Ice Token"
+      "Lae's Hardcore Contract",
+      "Hollowborn Paladin",
+      "Hollowborn Paladin Helmet",
+      "Hollowborn Shadow of Fate",
+      "Classic Hollowborn Paladin Armor",
+      "Hollowborn Paladin Visor",
+      "Hollowborn Paladin Hood",
+      "Hollowborn Templar Helm",
+      "Hollowborn Paladin Cape",
+      "Hollowborn Paladin Cloak",
+      "Dual Hollowborn Shadows of Fate",
+      "Hollowborn Daimyo Battlepet",
+      "Hollowborn Daimyo",
+      "Human Soul",
+      "Fallen Soul",
+      "Sparrow's Blood",
+      "Brilliant Aura",
+      "Blinding Light Fragments",
+      "Dark Arts Scholar",
+      "Gem of Superiority",
+      "Exalted Paladin Seal",
+      "Condensed Mana",
+      "Templar's Helm of Light",
+      "Destiny Cloak",
+      "Dark Aura Gem",
+      "Shadow Dragon Soul",
+      "Unidentified 25",
+      "Unmoulded Fiend Essence",
+      "Seal of Light",
+      "Seal of Darkness",
+      "Undead Skull",
+      "Unholy Wasabi",
+      "Cysero's Doom Sock",
+      "Chickencow Claw",
+      "Zorbak's Staff Skull",
+      "Dragon Khan's Corrupt Scepter",
+      "Sir Ver's Broken Power Button",
+      "Death's Cursed Hourglass",
+      "Omni Artifact",
+      "Dragon Scale",
+      "Ice Vapor"
     ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "sName": "Yokai (SEA)",
-    "iPort": 41429
+    "sName": "Galanoth",
+    "iPort": 62335
   },
-  "SkillDelay": 200,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "AutoRelogin": true,
-  "RelogDelay": 10000,
+  "RelogDelay": 5000,
   "RelogRetryUponFailure": true,
-  "BotDelay": 500,
+  "BotDelay": 1000,
   "SkipDelayIndexIf": true,
+  "InfiniteAttackRange": true,
+  "SkipCutscenes": true,
   "WalkSpeed": 8,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",

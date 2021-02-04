@@ -4,6 +4,11 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+        "TransferFromBank": true,
+        "ItemName": "Shadow Shroud"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
         "Map": "akiba-1998",
         "Cell": "r3",
@@ -61,6 +66,10 @@
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
           "QuestID": 486
         }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+        "ItemName": "Shadow Shroud"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
@@ -121,7 +130,7 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Galanoth",
-    "iPort": 1373
+    "iPort": 41429
   },
   "SkillDelay": 100,
   "ExitCombatBeforeRest": true,
