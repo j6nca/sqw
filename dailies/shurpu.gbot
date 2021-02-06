@@ -4,6 +4,11 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+        "TransferFromBank": true,
+        "ItemName": "Shurpu Blaze Token"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
         "Map": "xancave-1998",
         "Cell": "Enter",
@@ -40,6 +45,10 @@
         }
       },
       {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+        "ItemName": "Shurpu Blaze Token"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
       }
     ]
@@ -67,7 +76,7 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Twilly",
-    "iPort": 62335
+    "iPort": 41429
   },
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,

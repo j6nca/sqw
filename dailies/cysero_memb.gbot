@@ -4,6 +4,11 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+        "TransferFromBank": true,
+        "ItemName": "C-Armor Token"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
         "Map": "deadmoor-1998",
         "Cell": "Enter",
@@ -65,6 +70,10 @@
         "Delay": 1000
       },
       {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+        "ItemName": "C-Armor Token"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
       }
     ]
@@ -93,7 +102,7 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Twilly",
-    "iPort": 65242
+    "iPort": 41429
   },
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,

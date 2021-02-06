@@ -4,6 +4,11 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+        "TransferFromBank": true,
+        "ItemName": "Shadow Skull"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
         "Map": "shadowfall",
         "Cell": "Inside",
@@ -63,6 +68,10 @@
         }
       },
       {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+        "ItemName": "Shadow Skull"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
       }
     ]
@@ -120,7 +129,7 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Galanoth",
-    "iPort": 36700
+    "iPort": 41429
   },
   "SkillDelay": 100,
   "ExitCombatBeforeRest": true,
