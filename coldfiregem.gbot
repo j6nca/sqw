@@ -4,41 +4,47 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "fiendshard-1998",
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "start"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
         "Cell": "Enter",
-        "Pad": "Spawn"
+        "Pad": "Right"
       },
       {
         "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 7901
+          "QuestID": 7390
         }
       },
       {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Coldfire Shard",
+        "ItemType": 1,
+        "Quantity": "13"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r9",
+        "Cell": "r2",
         "Pad": "Left"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-        "Monster": "Nulgath's Fiend Shard",
-        "ItemName": "Piece of the Shard",
-        "ItemType": 1,
-        "Quantity": "1"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r8",
-        "Pad": "Right"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+        "Delay": 500
       },
       {
         "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 7901
+          "QuestID": 7390
         }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "start"
       }
     ]
   },
@@ -47,23 +53,25 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Commandment",
-        "Index": "1"
+        "Text": "[CS]",
+        "Type": 2
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Hymn of Light",
+        "Text": "2: Enigma",
         "Index": "2"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Righteous Seal",
-        "Index": "3"
+        "Text": "4: Pandemonium",
+        "Index": "4"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Sacred Magic: Eden",
-        "Index": "4"
+        "Text": "[S] 3: Surge",
+        "Type": 1,
+        "Index": "3",
+        "SafeHealth": 60
       }
     ]
   },
@@ -80,23 +88,52 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Fiend Emblem",
-      "Shard of the Shard"
+      "Aeacus Empowered",
+      "Tethered Soul",
+      "Darkened Essence",
+      "Dracolich Contract",
+      "Revenant's Spellscroll",
+      "Grim Cohort Conquered",
+      "Ancient Cohort Conquered",
+      "Pirate Cohort Conquered",
+      "Battleon Cohort Conquered",
+      "Mirror Cohort Conquered",
+      "Darkblood Cohort Conquered",
+      "Vampire Cohort Conquered",
+      "Spirit Cohort Conquered",
+      "Dragon Cohort Conquered",
+      "Doomwood Cohort Conquered",
+      "Conquest Wreath",
+      "Legion Token",
+      "Dage's Favor",
+      "Legion Seal",
+      "Gem of Mastery",
+      "Emblem of Dage",
+      "Defeated Makai",
+      "Diamond Token of Dage",
+      "Dark Token",
+      "Exalted Crown",
+      "Legion Revenant",
+      "Coldfire Gem"
     ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "sName": "Sepulchure",
-    "iPort": 30127
+    "sName": "Yorumi",
+    "iPort": 5525
   },
+  "SkillDelay": 500,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "AutoRelogin": true,
-  "RelogDelay": 10000,
-  "BotDelay": 700,
+  "RelogDelay": 5000,
+  "BotDelay": 1000,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
+  "ProvokeMonsters": true,
+  "EnemyMagnet": true,
+  "SkipCutscenes": true,
   "WalkSpeed": 8,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",

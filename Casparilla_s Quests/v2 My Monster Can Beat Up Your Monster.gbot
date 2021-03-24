@@ -16,7 +16,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "lust",
+        "Map": "lust-1998",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
@@ -182,7 +182,7 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Galanoth",
-    "iPort": 54403
+    "iPort": 41429
   },
   "SkillDelay": 200,
   "ExitCombatBeforeRest": true,

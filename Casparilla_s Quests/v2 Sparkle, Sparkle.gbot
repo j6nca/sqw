@@ -16,7 +16,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "lycanwar",
+        "Map": "lycanwar-1998",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
@@ -39,7 +39,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "nyx",
+        "Map": "nyx-1998",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
@@ -62,7 +62,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "mortis",
+        "Map": "mortis-1998",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
@@ -145,7 +145,7 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Galanoth",
-    "iPort": 54403
+    "iPort": 41429
   },
   "SkillDelay": 200,
   "ExitCombatBeforeRest": true,

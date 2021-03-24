@@ -16,7 +16,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "mudluk",
+        "Map": "mudluk-1998",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
@@ -242,7 +242,7 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Galanoth",
-    "iPort": 54403
+    "iPort": 41429
   },
   "SkillDelay": 500,
   "ExitCombatBeforeRest": true,

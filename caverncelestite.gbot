@@ -4,41 +4,60 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "fiendshard-1998",
-        "Cell": "Enter",
-        "Pad": "Spawn"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Join"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
-        "Quest": {
-          "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 7901
-        }
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdMapIsNot, Grimoire",
+        "Tag": "Map",
+        "Text": "Map is not",
+        "Value1": "battleunderc",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+        "Map": "battleunderc-1998",
+        "Cell": "r2",
+        "Pad": "left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdMapIsNot, Grimoire",
+        "Tag": "Map",
+        "Text": "Map is not",
+        "Value1": "battleunderc",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+        "Map": "battleunderc-1998",
+        "Cell": "r2",
+        "Pad": "left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "A"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdCellIsNot, Grimoire",
+        "Tag": "Map",
+        "Text": "Cell is not",
+        "Value1": "r2",
+        "Value2": ""
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r9",
+        "Cell": "r2",
         "Pad": "Left"
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-        "Monster": "Nulgath's Fiend Shard",
-        "ItemName": "Piece of the Shard",
-        "ItemType": 1,
-        "Quantity": "1"
+        "Monster": "*",
+        "ItemName": "Cavern Celestite",
+        "Quantity": "1600"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r8",
-        "Pad": "Right"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
-        "Quest": {
-          "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 7901
-        }
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "A"
       }
     ]
   },
@@ -47,22 +66,31 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Commandment",
+        "Text": "1: Ancestor's Flame",
         "Index": "1"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Hymn of Light",
+        "Text": "[S] 3: Depraved Empowerment",
+        "Type": 1,
+        "Index": "3",
+        "SafeHealth": 60
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Hydrophobia",
         "Index": "2"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Righteous Seal",
-        "Index": "3"
+        "Text": "[S] 3: Depraved Empowerment",
+        "Type": 1,
+        "Index": "3",
+        "SafeHealth": 60
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Sacred Magic: Eden",
+        "Text": "4: Anathema",
         "Index": "4"
       }
     ]
@@ -80,21 +108,20 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Fiend Emblem",
-      "Shard of the Shard"
+      "Cavern Celestite"
     ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "sName": "Sepulchure",
+    "sName": "Twig",
     "iPort": 30127
   },
-  "ExitCombatBeforeRest": true,
+  "SkillDelay": 100,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "AutoRelogin": true,
-  "RelogDelay": 10000,
-  "BotDelay": 700,
+  "RelogDelay": 3000,
+  "BotDelay": 500,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "WalkSpeed": 8,
@@ -103,6 +130,6 @@
     "$values": []
   },
   "RestMp": 60,
-  "RestHp": 60,
+  "RestHp": 20,
   "RestartUponDeath": true
 }

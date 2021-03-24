@@ -4,41 +4,8 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "fiendshard-1998",
-        "Cell": "Enter",
-        "Pad": "Spawn"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
-        "Quest": {
-          "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 7901
-        }
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r9",
-        "Pad": "Left"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-        "Monster": "Nulgath's Fiend Shard",
-        "ItemName": "Piece of the Shard",
-        "ItemType": 1,
-        "Quantity": "1"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r8",
-        "Pad": "Right"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
-        "Quest": {
-          "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 7901
-        }
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
+        "Monster": "*"
       }
     ]
   },
@@ -47,22 +14,31 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Commandment",
+        "Text": "1: Atramentous Shade",
         "Index": "1"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Hymn of Light",
+        "Text": "[S] 3: Depraved Empowerment",
+        "Type": 1,
+        "Index": "3",
+        "SafeHealth": 60
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Wicked Purgatory",
         "Index": "2"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Righteous Seal",
-        "Index": "3"
+        "Text": "[S] 4: Anathema",
+        "Type": 1,
+        "Index": "4",
+        "SafeHealth": 60
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Sacred Magic: Eden",
+        "Text": "4: Anathema",
         "Index": "4"
       }
     ]
@@ -80,21 +56,31 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Fiend Emblem",
-      "Shard of the Shard"
+      "Escherion's Helm",
+      "Shattered Legendary Sword of Dragon Control",
+      "Hydra Scale Piece",
+      "Blood Gem of the Archfiend",
+      "Tainted Soul",
+      "Tainted Core",
+      "ProtoSoul Gem",
+      "UnDeath Core",
+      "Lost Skull",
+      "Cyber Skull"
     ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Sepulchure",
-    "iPort": 30127
+    "iPort": 49537
   },
+  "SkillDelay": 500,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "AutoRelogin": true,
-  "RelogDelay": 10000,
-  "BotDelay": 700,
+  "RelogDelay": 5000,
+  "RelogRetryUponFailure": true,
+  "BotDelay": 1000,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "WalkSpeed": 8,

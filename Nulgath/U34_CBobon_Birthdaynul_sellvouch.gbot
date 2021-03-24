@@ -328,7 +328,7 @@
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
         "Label": "bvd"
       },
-{
+      {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInInventory, Grimoire",
         "Tag": "Item",
         "Text": "Is in inventory",
@@ -376,7 +376,7 @@
         "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 6183
+          "QuestID": 6697
         }
       },
       {
@@ -677,7 +677,7 @@
         "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 6183
+          "QuestID": 6697
         }
       },
       {
@@ -1340,13 +1340,14 @@
       "Unidentified 27",
       "Unidentified 26",
       "Unidentified 35",
-      "Unidentified 4"
+      "Unidentified 4",
+      "Tainted Soul"
     ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Sepulchure",
-    "iPort": 3226
+    "iPort": 30085
   },
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,

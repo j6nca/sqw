@@ -20,7 +20,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "fotia-1998",
+        "Map": "fotia-99998",
         "Cell": "r1",
         "Pad": "Left"
       },
@@ -238,7 +238,7 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "sName": "Yorumi",
-    "iPort": 38117
+    "iPort": 5525
   },
   "SkillDelay": 500,
   "ExitCombatBeforeRest": true,
@@ -252,7 +252,6 @@
   "InfiniteAttackRange": true,
   "ProvokeMonsters": true,
   "EnemyMagnet": true,
-  "LagKiller": true,
   "HidePlayers": true,
   "SkipCutscenes": true,
   "WalkSpeed": 8,
